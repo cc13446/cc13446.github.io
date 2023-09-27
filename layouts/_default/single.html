@@ -4,7 +4,7 @@
     <header class="mb-5">
         <div class="text-xl text-slate-100">{{ .Title }}</div>
         {{ if .Date }}
-            <div class="mt-2 text-sl text-gray-4z00">{{ .Date | time.Format ":date_long"  }}</div>
+            <div class="mt-2 text-sl text-gray-400">{{ .Date | time.Format ":date_long"  }}</div>
         {{ end }}
     </header>
     {{.Content}}
