@@ -5,6 +5,8 @@ title = 'CC Blog'
 # 禁用分类、标签、RSS、sitemap
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 
+publishDir='docs'
+
 [params]
   github = 'http://github.com/cc13446'
   twitter = 'https://twitter.com/cc13920'    
