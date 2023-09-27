@@ -9,6 +9,8 @@
         {{ .Site.Title }}
         {{ end }}
     </title>
+    {{ $style := resources.Match "css/**.css" | resources.Concat "custom.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
   </head>
   <body class="bg-zinc-800 w-full max-w-screen-lg m-auto">
     {{ partial "header.html" . -}}
