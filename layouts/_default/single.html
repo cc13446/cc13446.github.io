@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<article>
+    <header class="mb-5">
+        <div class="text-xl text-slate-100">{{ .Title }}</div>
+        {{ if .Date }}
+            <div class="mt-2 text-sl text-gray-4z00">{{ .Date | time.Format ":date_long"  }}</div>
+        {{ end }}
+    </header>
+    {{.Content}}
+</article>
+
+{{ end }}

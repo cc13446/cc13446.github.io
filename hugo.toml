@@ -1,3 +1,10 @@
 baseURL = 'http://cc13446.github.io'
 languageCode = 'en-us'
 title = 'CC Blog'
+
+# 禁用分类、标签、RSS、sitemap
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
+
+[params]
+  github = 'http://github.com/cc13446'
+  twitter = 'https://twitter.com/cc13920'    
