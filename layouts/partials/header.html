@@ -1,7 +1,7 @@
 <nav class="h-20 w-full flex flex-row justify-between items-center">
     <div class="h-full flex items-center">
         <div>
-            <a href="/docs" class="text-slate-100 text-3xl">
+            <a href="/" class="text-slate-100 text-3xl">
               {{ .Site.Title }}
             </a>
         </div>
@@ -9,12 +9,12 @@
     <div class="h-full w-4/5 flex items-center justify-end">
         {{ if .Site.Params.twitter }}
         <div class="ml-4">
-            <a href="{{ .Site.Params.twitter }}" ><img class="w-6 h-6" src="/docs/images/twitter.svg"/> </a>
+            <a href="{{ .Site.Params.twitter }}" ><img class="w-6 h-6" src="/images/twitter.svg"/> </a>
         </div>
         {{ end }}
         {{ if .Site.Params.github }}
         <div class="ml-4">
-            <a href="{{ .Site.Params.github }}" ><img class="w-6 h-6" src="/docs/images/github.svg"/> </a>
+            <a href="{{ .Site.Params.github }}" ><img class="w-6 h-6" src="/images/github.svg"/> </a>
         </div>
         {{ end }}
     </div>
