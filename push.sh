@@ -1,5 +1,6 @@
 rm -rf ./docs
 hugo
 git add .
-git commit -m '$(date +"%m-%d-%Y)'
+pushDate=`date +"%m-%d-%Y`
+git commit -m '$pushDate'
 git push
